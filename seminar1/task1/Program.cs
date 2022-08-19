@@ -9,9 +9,9 @@
 
 // вводим два числа
 Console.Write("Введите число а: ");
-double a = double.Parse(Console.ReadLine());
+int a = int.Parse(Console.ReadLine());
 Console.Write("Введите число b: ");
-double b = double.Parse(Console.ReadLine());
+int b = int.Parse(Console.ReadLine());
 
 // добавляем условие для определения максимального числа
 
