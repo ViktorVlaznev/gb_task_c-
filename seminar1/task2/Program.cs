@@ -16,14 +16,9 @@ int b = int.Parse(Console.ReadLine());
 Console.Write("Введите число c: ");
 int c = int.Parse(Console.ReadLine());
 // добавляем условие для определения максимального числа
-if (a > b)
+if (a > b && a > c)
 {
-    if (a > c){
     Console.WriteLine($"Максимальное число = {a}");
-    } else
-    {
-    Console.WriteLine($"Максимальное число = {c}");
-    }
 }
 else
 {
