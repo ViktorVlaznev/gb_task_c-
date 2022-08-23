@@ -6,7 +6,7 @@
 Console.Write("Введите число: ");
 int thirdDigitNumber = int.Parse(Console.ReadLine());
 int thirdDigit = thirdDigitNumber / 100 % 10;
-if (thirdDigit == 0)
+if (thirdDigitNumber < 100 && thirdDigitNumber > -100)
 {
     Console.WriteLine("третьей цифры нет");
 }
