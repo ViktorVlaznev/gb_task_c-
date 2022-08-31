@@ -9,9 +9,9 @@ int[] CreateArray(int len, int min, int max)
 
     for (int i = 0; i < len; i++)
     {
-        array[i] = new Random().Next(min, max);
+        array[i] = new Random().Next(min, max + 1);
     }
-
+    
     return array;
 }
 
@@ -21,5 +21,11 @@ void PrintArray(int[] arr)
     Console.WriteLine($"[{String.Join(", ", arr)}]");
 }
 
-PrintArray(CreateArray(5, 0, 20));
-PrintArray(CreateArray(3, 1, 35));
+Console.Write("Введите размер массива: ");
+int length = int.Parse(Console.ReadLine());
+Console.Write("Введите минимальный элемент массива: ");
+int minElem = int.Parse(Console.ReadLine());
+Console.Write("Введите максимальный элемент массива: ");
+int maxElem = int.Parse(Console.ReadLine());
+
+PrintArray(CreateArray(length, minElem, maxElem));
