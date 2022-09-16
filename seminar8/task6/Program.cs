@@ -10,11 +10,21 @@
 int Sqrt(int number)
 {
     int sqrtInt = number / 2;
-    while (sqrtInt > number / sqrtInt)
+    if (sqrtInt != 0 && number > 0)
     {
-        sqrtInt--;
+        while (sqrtInt > number / sqrtInt)
+        {
+            sqrtInt--;
+        }
+        return sqrtInt;
     }
-    return sqrtInt;
+    else if (number < 0)
+    {
+        Console.WriteLine("Введено не положительное число.");
+        return -1;
+    }
+    else
+        return 1;
 }
 
 Console.Write("Введите число: ");
