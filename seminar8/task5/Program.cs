@@ -38,8 +38,6 @@ int[,] FillSpirallArray()
     int row = 4;
     int column = 4;
     int[,] result = new int[row, column];
-    int rowArr = 1;
-    int colArr = 1;
     int count = 1;
 
     for (int k = 0; k < column; k++)
